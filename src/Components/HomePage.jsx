@@ -1,8 +1,8 @@
 import React from 'react'
 import style from 'styled-components'
 
-function HomePage() {
-    console.log("here")
+function HomePage({toggle}) {
+  
   return (
     <>
     <Section>
@@ -11,7 +11,7 @@ function HomePage() {
         </div>
         <div className='game_name'>
             <Heading className='game_header'>DICE GAME</Heading>
-            <Button>Play Now</Button>
+            <Button onClick={toggle}>Play Now</Button>
         </div>
     </Section>
     </>
@@ -36,6 +36,7 @@ padding:10px;
     width: 100%;
     height: auto;
     display: block;
+    
 }
     .game_name
     {
@@ -43,8 +44,10 @@ padding:10px;
     flex-direction:column;
     align-items:end;
     }
+    
 `
 const Button = style.button`
+
 background-color: black;
 color: white;
 padding:10px;
@@ -66,5 +69,7 @@ transition: 0.3s background ease-in;
 const Heading = style.h1`
     font-size:96px;
     white-space:nowrap;
-
+    
+   
 `
+
