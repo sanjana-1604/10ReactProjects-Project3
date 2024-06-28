@@ -1,5 +1,6 @@
 import React from 'react'
 import style from 'styled-components'
+import { Button } from '../style/Button'
 
 function HomePage({toggle}) {
   
@@ -7,7 +8,7 @@ function HomePage({toggle}) {
     <>
     <Section>
         <div className='game_image'>
-            <img src="Img/dices 1.png" alt="" />
+            <img src="Img/dices.png" alt="" />
         </div>
         <div className='game_name'>
             <Heading className='game_header'>DICE GAME</Heading>
@@ -46,26 +47,7 @@ padding:10px;
     }
     
 `
-const Button = style.button`
 
-background-color: black;
-color: white;
-padding:10px;
-width:220px;
-border-radius:5px;
-padding:10px 18px ;
-font-weight:600;
-border: 1px solid transparent;
-transition: 0.4s background ease-in;
-cursor:pointer;
-&:hover
-{
-background:white;
-border: 1px solid black;
-color:black;
-transition: 0.3s background ease-in;
-}
-`
 const Heading = style.h1`
     font-size:96px;
     white-space:nowrap;
