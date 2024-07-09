@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import NumberSelector from "./NumberSelector";
 import TotalScore from "./TotalScore";
-import rollDice from "./RollDice";
+
 import { useState } from "react";
 import { Button, OutlineButton } from "../style/Button";
 import Rules from "./Rules";
