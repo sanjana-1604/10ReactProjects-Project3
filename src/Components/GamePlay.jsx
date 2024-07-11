@@ -2,11 +2,11 @@
 import styled from "styled-components";
 import NumberSelector from "./NumberSelector";
 import TotalScore from "./TotalScore";
-
+import RollDice from "./RollDice";
 import { useState } from "react";
 import { Button, OutlineButton } from "../style/Button";
 import Rules from "./Rules";
-import RollDice from "./RollDice";
+
 
 const GamePlay = () => {
   const [score, setScore] = useState(0);
